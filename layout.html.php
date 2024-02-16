@@ -47,7 +47,7 @@
 </style>
 </noscript>
 </head>
-<body class="<?php if (is_index() || isset($is_profile)):?>list<?php endif;?>" id="top" <?php if (!is_index()):?>onload="htmlTableOfContents();"<?php endif;?>>
+<body class="<?php if (is_index() || isset($is_profile)):?>list<?php endif;?> dark" id="top" <?php if (!is_index()):?>onload="htmlTableOfContents();"<?php endif;?>>
 <?php if (facebook()) { echo facebook(); } ?>
 <?php if (login()) { toolbar(); } ?>
 <script>
@@ -55,8 +55,6 @@
         document.body.classList.add('dark');
     } else if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 </script>
 
