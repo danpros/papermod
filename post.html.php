@@ -13,16 +13,6 @@
 </header> 
 
 <div class="post-content" id="post-content">
-	<div class="toc" id="toc-wrapper" style="display:none">
-		<details>
-			<summary title="TOC">
-				<span class="details">Table of Contents</span>
-			</summary>
-			<div class="inner">
-				<div id="toc"></div>
-			</div>
-		</details>
-	</div>
 	
 	<?php if(!empty($post->image)):?>
 		<img class="media-wrapper" title="<?php echo $post->title;?>" src="<?php echo $post->image;?>"/>

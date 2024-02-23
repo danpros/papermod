@@ -47,7 +47,7 @@
 </style>
 </noscript>
 </head>
-<body class="<?php if (is_index() || isset($is_profile)):?>list<?php endif;?> dark" id="top" <?php if (!is_index()):?>onload="htmlTableOfContents();"<?php endif;?>>
+<body class="<?php if (is_index() || isset($is_profile)):?>list<?php endif;?> dark" id="top">
 <?php if (facebook()) { echo facebook(); } ?>
 <?php if (login()) { toolbar(); } ?>
 <script>
@@ -157,9 +157,6 @@
     })
 
 </script>
-<?php if (!is_index()):?>
-<script src="<?php echo theme_path();?>js/toc.js"></script>
-<?php endif;?>
 <?php if (analytics()): ?><?php echo analytics() ?><?php endif; ?>
 </body>
 </html>

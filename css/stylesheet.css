@@ -660,15 +660,15 @@ pre:hover .copy-code {
     font-size: 14px;
     font-weight: 400;
 }
-.toc {
-    margin: 0 2px 40px;
-    border: 1px solid var(--border);
-    background: var(--code-bg);
-    border-radius: var(--radius);
-    padding: 0.4em;
+
+.toc-wrapper {
+	border: 1px solid var(--border)!important;
+	background: var(--code-bg)!important;
+	border-radius: var(--radius)!important;	
 }
-.dark .toc {
+.dark .toc-wrapper {
     background: var(--entry);
+	border: 1px solid var(--border);
 }
 .toc details summary {
     cursor: zoom-in;
@@ -1287,32 +1287,12 @@ iframe {
 	display:none;
 }
 
-#toc .h3-toc {
-  margin-left: .20in;
-}
-#toc .h4-toc {
-  margin-left: .35in;
-}
-#toc .h5-toc {
-  margin-left: .50in;
-}
-#toc .h6-toc {
-  margin-left: .65in;
-}
-
-#toc {
-	font-size: 90%;
-}
-
-#toc a, .post-content a.anchor {
-	text-decoration:none;
-	box-shadow:none;
-}
-
 .post-content a.anchor {
 	color: var(--primary);
 	line-height:1;
 	margin-left: 5px;
+	text-decoration:none;
+	box-shadow:none;
 }
 
 .profile_content p{

@@ -7,16 +7,6 @@
 	</header> 
 
 	<div class="post-content" id="post-content">
-		<div class="toc" id="toc-wrapper" style="display:none">
-			<details>
-				<summary title="TOC">
-					<span class="details">Table of Contents</span>
-				</summary>
-				<div class="inner">
-					<div id="toc"></div>
-				</div>
-			</details>
-		</div>
 		<?php echo $static->body;?>
 	</div>
 	
