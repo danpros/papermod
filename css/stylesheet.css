@@ -1321,3 +1321,7 @@ iframe {
 	border: 2px solid var(--tertiary);
 	border-radius: var(--radius);
 }
+
+.social-logo a {
+	margin: 10px 10px 10px 0px!important;
+}
