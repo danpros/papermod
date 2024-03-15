@@ -6,6 +6,7 @@
 <title><?php echo $title;?></title>
 <meta name="description" content="<?php echo $description; ?>"/>
 <link rel="canonical" href="<?php echo $canonical; ?>" />
+<?php echo $metatags;?>
 <link href="<?php echo theme_path();?>css/stylesheet.css" rel="stylesheet">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
