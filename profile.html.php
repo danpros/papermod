@@ -24,7 +24,7 @@
 
 <?php if (!empty($post->image)) {?>
 	<figure class="entry-cover"><a href="<?php echo $post->url;?>"><img title="<?php echo $post->title;?>" src="<?php echo $post->image;?>" width="100%"></a></figure>
-<?php } elseif (!empty($img)) {?>
+<?php } elseif (!empty($img) && empty($post->quote) && empty($post->video) && empty($post->audio)) { ?>
 	<figure class="entry-cover"><a href="<?php echo $post->url;?>"><img title="<?php echo $post->title;?>" src="<?php echo $img;?>" width="100%"></a></figure>
 <?php } ?>
 
