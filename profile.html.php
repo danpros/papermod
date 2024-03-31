@@ -52,7 +52,7 @@
   <div class="entry-content">
     <p><?php echo $post->description;?> [...]</p>
   </div>
-  <footer class="entry-footer"><span><?php echo format_date($post->date);?></span>&nbsp;·&nbsp;<?php echo $post->readTime;?> min&nbsp;·&nbsp;<a href="<?php echo $post->authorUrl;?>"><?php echo $post->authorName;?></a><?php if (disqus_count()):?>&nbsp;·&nbsp;<a href="<?php echo $post->url ?>#disqus_thread"> <?php echo i18n('Comments');?></a><?php endif;?><?php if (facebook()):?><a href="<?php echo $post->url ?>#comments"><span><fb:comments-count href=<?php echo $post->url ?>></fb:comments-count> <?php echo i18n('Comments');?></span></a><?php endif;?><?php if(login()):?></a>&nbsp;·&nbsp;<a href="<?php echo $post->url;?>/edit?destination=post"><?php echo i18n('edit');?></a><?php endif;?></footer>
+  <footer class="entry-footer"><span><?php echo format_date($post->date);?></span>&nbsp;·&nbsp;<?php echo $post->readTime;?> min&nbsp;·&nbsp;<a href="<?php echo $post->authorUrl;?>"><?php echo $post->authorName;?></a><?php if (disqus_count()):?>&nbsp;·&nbsp;<a href="<?php echo $post->url ?>#disqus_thread"> <?php echo i18n('Comments');?></a><?php endif;?><?php if (facebook()):?><a href="<?php echo $post->url ?>#comments"><span><fb:comments-count href=<?php echo $post->url ?>></fb:comments-count> <?php echo i18n('Comments');?></span></a><?php endif;?><?php if(authorized($post)):?></a>&nbsp;·&nbsp;<a href="<?php echo $post->url;?>/edit?destination=post"><?php echo i18n('edit');?></a><?php endif;?></footer>
 </article>
 <?php endforeach;?>
 

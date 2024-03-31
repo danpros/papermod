@@ -3,7 +3,7 @@
 	<header class="post-header">
 		<div class="breadcrumbs"><?php echo $breadcrumb;?></div>
 		<h1 class="post-title entry-hint-parent"><?php echo $static->title;?></h1>
-		<?php if (login()):?><a href="<?php echo $static->url;?>/edit?destination=front"><?php echo i18n('edit');?></a><?php endif;?>
+		<?php if (authorized($static)):?><a href="<?php echo $static->url;?>/edit?destination=front"><?php echo i18n('edit');?></a><?php endif;?>
 	</header> 
 
 	<div class="post-content" id="post-content">
